@@ -1,0 +1,17 @@
+.item {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  padding: 5px 0px;
+  .symbol {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid #3dd8ce;
+  }
+
+  .title {
+    margin-left: 10px;
+  }
+}

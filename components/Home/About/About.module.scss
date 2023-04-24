@@ -1,0 +1,122 @@
+.about {
+  width: 100%;
+  min-height: 80vh;
+  padding: 20px;
+  color: white;
+
+  .header {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color: #3dd8ce;
+  }
+  .contents {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 20px;
+
+    .left {
+      min-height: 40vh;
+
+      p {
+        opacity: 0.8;
+      }
+
+      .tech {
+        .box {
+          display: flex;
+        }
+      }
+    }
+    .right {
+      margin-top: 30px;
+      min-height: 40vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      .boxes {
+        width: 250px;
+        height: 300px;
+        position: relative;
+        .image-box {
+          position: relative;
+          width: 250px;
+          height: 300px;
+          background-color: #3dd8ce;
+          position: absolute;
+          top: -20px;
+          left: -20px;
+          z-index: 20;
+          border-radius: 3px;
+          animation: 1s sliderback forwards;
+          box-sizing: border-box;
+          overflow: hidden;
+        }
+
+        .box {
+          width: 250px;
+          height: 300px;
+          z-index: 10;
+          position: absolute;
+          border: 1px solid #3dd8ce;
+          border-radius: 3px;
+        }
+        .image-box:hover {
+          animation: 1s slider forwards;
+        }
+      }
+    }
+  }
+
+  .paragraph {
+    max-width: 60ch;
+    padding: 50px;
+    text-align: justify;
+    border: 5px solid gray;
+    border-radius: 0px 100px 0px 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding: 20px 100px;
+
+    .contents {
+      flex-direction: row;
+
+      .left {
+        flex-basis: 50%;
+        min-height: 80vh;
+      }
+
+      .right {
+        margin-top: 0;
+        flex-basis: 50%;
+        min-height: 80vh;
+      }
+    }
+  }
+}
+
+@keyframes slider {
+  0% {
+    transform: translate(0px);
+  }
+
+  100% {
+    transform: translate(20px, 20px);
+  }
+}
+
+@keyframes sliderback {
+  0% {
+    transform: translate(20px, 20px);
+  }
+
+  100% {
+    transform: translate(0px);
+  }
+}

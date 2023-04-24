@@ -1,0 +1,30 @@
+.work {
+  padding: 20px;
+  margin-top: 50px;
+
+  .header {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color: #3dd8ce;
+  }
+  .projects {
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+    .grid {
+      width: 100%;
+      display: grid;
+      justify-content: space-between;
+      grid-gap: 70px 20px;
+      grid-template-columns: repeat(auto-fit, minmax(auto, 300px));
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .work {
+    padding: 20px 100px;
+  }
+}
