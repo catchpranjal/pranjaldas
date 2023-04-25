@@ -1,0 +1,29 @@
+.card {
+  min-height: 150px;
+  background-color: #298986;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  .image {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .header-box {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    font-weight: bold;
+
+    .header {
+    }
+  }
+  .description {
+    margin-top: 10px;
+  }
+}

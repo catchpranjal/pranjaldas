@@ -1,9 +1,15 @@
 import styles from "./Work.module.scss";
 import WorkItem from "./WorkItem/WorkItem";
+import { motion } from "framer-motion";
 
 const Work = (props) => {
   return (
-    <div className={styles["work"]}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: 0.5 }}
+      className={styles["work"]}
+    >
       <div className={styles["header"]}>
         <span>Some Things I have built</span>
       </div>
@@ -41,7 +47,7 @@ const Work = (props) => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

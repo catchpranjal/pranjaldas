@@ -26,6 +26,7 @@ const Navbar = () => {
                 src="/images/logo.png"
                 fill
                 style={{ objectFit: "contain" }}
+                alt="Logo of Pranjal Das"
               />
             </div>
           </NavLink>

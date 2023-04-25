@@ -1,10 +1,16 @@
 import styles from "./About.module.scss";
 import TechItem from "./TechItem/TechItem";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const About = (props) => {
   return (
-    <div className={styles["about"]}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ ease: "linear", delay: 0.5 }}
+      className={styles["about"]}
+    >
       <div className={styles["header"]}>About Me</div>
       <div className={styles["contents"]}>
         <div className={styles["left"]}>
@@ -53,7 +59,7 @@ const About = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

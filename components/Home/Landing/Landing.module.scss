@@ -73,6 +73,16 @@
   }
 }
 
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 @keyframes rotate {
   0% {
     border-top-color: #44efe5;

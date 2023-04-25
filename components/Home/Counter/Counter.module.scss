@@ -1,0 +1,31 @@
+.counter {
+  padding: 20px;
+  margin: 30px;
+  background-color: #131e3c;
+  box-shadow: 1px 1px 1px 1px #131e3c;
+  min-height: 40vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  z-index: 50;
+
+  .glass {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.2;
+    border-radius: 10px;
+    z-index: -10;
+  }
+}
+
+@media (min-width: 1000px) {
+  .counter {
+    grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
+    margin: 30px 100px;
+  }
+}
